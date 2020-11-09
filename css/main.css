@@ -1,5 +1,159 @@
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    background-color: #151515;
+}
+
+h1 {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 200%;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #dddddd;
+}
+
+header,
+nav,
+section,
+footer {
+    margin: 5px;
+    padding: 10px;
+}
+
+header {
+    border: 1px solid grey;
+}
+
+footer {
+    border-top: 1px solid grey;
+    background-color: #3b3b3b;
+    color: darkgray;
+    text-align: center;
+}
+
+a {
+    color: #59678f;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Mobile-First-Ansatz*/
+/* Alle Ansichten */
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.mainnav {
+    background: #1f405e;
+    order: 4;
+}
+
+.maincontent {
+    flex: 2;
+    background: #454545;
+}
+
+.promotion {
+    flex: 1;
+    background: #59678f;
+}
+
+footer {
+    flex: 1 1 100%;
+    order: 4;
+}
+
+.maincontent,
+.promotion,
+.mainnav {
+    margin: 0;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.mainnav h3,
+.promotion h3,
+.promotion p,
+.mainnav ul {
+    margin: 0.3em;
+    list-style: none;
+}
+
+.mainnav ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.mainnav li {
+    padding: 0.2em 1em;
+    margin: 0.3em 0;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+header {
+    position: relative;
+    flex: 1 1 100%;
+}
+
+.menulink {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    padding: 0.2em 0.5em;
+    border: 1px solid gray;
+    background: #efefef;
+}
+
+/* Tabletbreite */
+
+@media only screen and (min-width: 580px) {
+    .mainnav {
+        flex: 1 1 100%;
+        order: 1;
+    }
+
+    .maincontent {
+        order: 2;
+    }
+
+    .promotion {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+        flex: 1 1 100%;
+    }
+
+    .flexcontainer {
+        flex-direction: row;
+    }
+
+    .mainnav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menulink {
+        display: none;
+    }
+}
+
+/* Desktopbreite */
+
+@media only screen and (min-width: 900px) {
+    .mainnav {
+        flex: 1;
+    }
+
+    .mainnav ul {
+        flex-direction: column;
+    }
 }
