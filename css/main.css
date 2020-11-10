@@ -38,6 +38,10 @@ a {
     text-decoration: underline;
 }
 
+.logo {
+    width: 128px;
+}
+
 /* Mobile-First-Ansatz*/
 /* Alle Ansichten */
 
