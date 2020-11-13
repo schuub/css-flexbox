@@ -164,4 +164,9 @@ header {
     .mainnav ul {
         flex-direction: column;
     }
+
+    .logo {
+        float: left;
+
+    }
 }
