@@ -43,7 +43,8 @@ a {
 }
 
 form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Mobile-First-Ansatz*/
@@ -165,8 +166,10 @@ header {
         flex-direction: column;
     }
 
+    /*
     .logo {
         float: left;
 
     }
+    */
 }
