@@ -39,7 +39,8 @@ a {
 }
 
 .logo {
-    width: 128px;
+    width: 8em;
+    margin: 0 0.5em 0 0;
 }
 
 form {
