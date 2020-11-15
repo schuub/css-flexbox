@@ -48,6 +48,10 @@ form {
     flex-direction: column;
 }
 
+.news_headline a {
+    text-decoration: none;
+}
+
 /* Mobile-First-Ansatz*/
 /* Alle Ansichten */
 
