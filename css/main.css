@@ -48,8 +48,9 @@ form {
     flex-direction: column;
 }
 
-.news_headline a {
+.news_link {
     text-decoration: none;
+    color: #dddddd;
 }
 
 /* Mobile-First-Ansatz*/
