@@ -71,6 +71,15 @@ form {
     background: #454545;
 }
 
+.news_body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.news_abstract {
+    margin: 0 0 0 0.5em;
+}
+
 .promotion {
     flex: 0 1 15%;
     background: #272727;
@@ -140,6 +149,12 @@ header {
     .maincontent {
         order: 2;
     }
+
+    .news_body {
+        flex-direction: row;
+        margin: 0 0.5em 0 0;
+    }
+
 
     .promotion {
         order: 3;
