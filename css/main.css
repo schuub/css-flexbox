@@ -78,6 +78,10 @@ form {
     flex-direction: row-reverse;
 }
 
+.news_img {
+    max-width: 30%;
+}
+
 .news_abstract {
     margin: 0 0 0 0.5em;
 }
