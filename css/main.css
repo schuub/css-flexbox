@@ -63,7 +63,7 @@ form {
 }
 
 .mainnav {
-    background: #1f405e;
+    background: #272727;
     order: 4;
 }
 
@@ -133,7 +133,8 @@ footer {
 .mainnav li {
     padding: 0.2em 1em;
     margin: 0.3em 0;
-    border: 1px solid gray;
+    background-color: #323232;
+    /*border: 1px solid gray;*/
     text-align: center;
 }
 
