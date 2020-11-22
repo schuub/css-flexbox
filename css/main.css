@@ -107,6 +107,11 @@ h3.news_headline {
     background: #272727;
 }
 
+form input, form span {
+    margin: 0.2em 0;
+}
+
+
 footer {
     flex: 1 1 100%;
     order: 4;
