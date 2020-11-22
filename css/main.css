@@ -17,7 +17,7 @@ header,
 nav,
 section,
 footer {
-    margin: 5px;
+    margin: 0.2em;
     padding: 10px;
 }
 
@@ -99,7 +99,7 @@ footer {
 .maincontent,
 .promotion,
 .mainnav {
-    margin: 0;
+    margin: 0.2em;
     padding: 0.5em;
     box-sizing: border-box;
 }
