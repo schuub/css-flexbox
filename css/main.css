@@ -196,4 +196,8 @@ header {
         flex-direction: column;
     }
 
+    nav a::before {
+        content: "> ";
+    }
+
 }
