@@ -197,7 +197,12 @@ header {
     }
 
     nav a::before {
-        content: "> ";
+        content: ">";
     }
+
+    nav a::after {
+        content: "<";
+    }
+
 
 }
