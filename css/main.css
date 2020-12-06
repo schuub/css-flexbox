@@ -22,10 +22,20 @@ footer {
 }
 
 header {
+    grid-area: header;
     border: 1px solid #e8774a;
 }
 
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
 footer {
+    grid-area: footer;
     border-top: 1px solid grey;
     background-color: #3b3b3b;
     color: darkgray;
@@ -58,7 +68,7 @@ form {
 
 .raster {
     display: grid;
-    grid-template-areas: "header" "nav" "main" "aside" "footer";
+    grid-template-areas: "header" "main" "aside" "nav" "footer";
     grid-template-columns: 1fr;
     grid-gap: 10px;
 }
@@ -174,7 +184,7 @@ header {
 
     .raster {
         grid-template-areas: "header header" "nav nav" "main aside" "footer footer";
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 1fr;
     }
 
     header h1 {
@@ -219,6 +229,11 @@ header {
 /* Desktopbreite */
 
 @media only screen and (min-width: 900px) {
+    .raster {
+        grid-template-areas: "header header header" "nav main aside" "footer footer footer";
+        grid-template-columns: 0.7fr 2fr 0.7fr;
+    }
+
     .mainnav {
         flex: 0 1 20%;
     }
