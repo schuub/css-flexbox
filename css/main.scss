@@ -1,7 +1,8 @@
 @import "../css/abstracts/variables";
 
+// SCSS Feature: variables
 html {
-    background-color: #151515;
+    background-color: $PAGE-BACKGROUND;
 }
 
 h1 {
@@ -10,9 +11,10 @@ h1 {
     margin: auto 0 0 0;
 }
 
+// SCSS Feature: variables
 body {
     font-family: Verdana, Geneva, sans-serif;
-    color: #dddddd;
+    color: $MAIN-COLOR;
 }
 
 header,
@@ -25,7 +27,7 @@ footer {
 
 header {
     grid-area: header;
-    border: 1px solid #e8774a;
+    border: 1px solid $HEADER-BORDER-COLOR;
 }
 
 nav {
@@ -45,7 +47,7 @@ footer {
 }
 
 a {
-    color: #b0b0b0;
+    color: $LINK-COLOR;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -62,7 +64,7 @@ form {
 
 .news_link {
     text-decoration: none;
-    color: #dddddd;
+    color: $MAIN-COLOR;
 }
 
 /* Mobile-First-Ansatz*/
@@ -79,15 +81,16 @@ header h1 {
     font-size: 1em;
 }
 
+// SCSS Feature: variables
 .mainnav {
-    background: #272727;
+    background: $AREA-BACKGROUND-COLOR;
     order: 4;
     padding: 0;
 }
 
+// SCSS Feature: variables
 .maincontent {
-    /*flex: 2;*/
-    background: #272727;
+    background: $AREA-BACKGROUND-COLOR;
 }
 
 .news_body {
@@ -107,17 +110,19 @@ h3.news_headline {
     margin-block-end: 0.2em;
 }
 
+// SCSS Feature: operators
 .news_img {
-    max-width: 30%;
+    max-width: 1/3 * 100%;
 }
 
 .news_abstract {
     margin: 0 0 0 0.5em;
 }
 
+// SCSS Feature: variables
 .promotion {
     flex: 0 1 15%;
-    background: #272727;
+    background: $AREA-BACKGROUND-COLOR;
 }
 
 form input, form span {
@@ -185,7 +190,8 @@ footer {
 
     /* Tabletbreite */
 
-    @media all and (min-width: 650px) {
+    // SCSS Feature: variables
+    @media #{$MEDIUM} {
 
         .raster {
             grid-template-areas: "header header" "nav nav" "main aside" "footer footer";
@@ -233,7 +239,8 @@ footer {
 
     /* Desktopbreite */
 
-    @media only screen and (min-width: 900px) {
+    // SCSS Feature: variables
+    @media #{$LARGE} {
         .raster {
             grid-template-areas: "header header header" "nav main aside" "footer footer footer";
             grid-template-columns: 0.7fr 2fr 0.7fr;
